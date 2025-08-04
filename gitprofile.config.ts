@@ -44,7 +44,7 @@ const CONFIG = {
         'B.S. in Applied and Computational Mathematical Sciences (Discrete Math & Algorithms)',
       from: '2022',
       to: '2026 (Expected)',
-      institutionLink: 'https://www.uw.edu',
+      companyLink: 'https://www.uw.edu',
     },
   ],
   projects: {
