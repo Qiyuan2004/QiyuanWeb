@@ -15,7 +15,9 @@ const CONFIG = {
     website: 'https://qiyuan2004.github.io/QiyuanWeb/',
     email: 'qq22@uw.edu',
   },
-  resume: { fileUrl: '/resume.pdf' },
+  resume: {
+  fileUrl: 'https://qiyuan2004.github.io/QiyuanWeb/resume.pdf',
+},
   skills: [
     'Python','OCaml','C/C++','Java','SQL','HTML/CSS','LaTeX','PyTorch','NumPy','Pandas','Matplotlib',
   ],
@@ -42,8 +44,7 @@ const CONFIG = {
         'B.S. in Applied and Computational Mathematical Sciences (Discrete Math & Algorithms)',
       from: '2022',
       to: '2026 (Expected)',
-      // 暂时去除 institutionLink，除非确定源码支持
-      // institutionLink: 'https://www.uw.edu',
+      institutionLink: 'https://www.uw.edu',
     },
   ],
   projects: {
@@ -64,19 +65,19 @@ const CONFIG = {
           title: 'Jet Tagging with Transformers',
           description: 'Transformer-based deep learning model classifying LHC jets into 5 categories with 77.1% accuracy.',
           imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/Qiyuan2004/jet-tagging',
+          link: 'https://drive.google.com/file/d/1WC8qJ0KVE-IkqtslBga9FeAbePFtIa5S/view?pli=1',
         },
         {
           title: 'MOOC Completion Predictor',
-          description: 'Predicting MOOC course completion with decision tree ensembles, achieving 95.3% accuracy.',
+          description: 'Predicting MOOC course completion with decision tree ensembles, achieving 95.3% accuracy in kaggle competition.',
           imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/Qiyuan2004',
+          link: 'https://www.kaggle.com/qiyuanqiu/competitions',
         },
         {
           title: 'Interactive Data Visualization',
           description: 'Dashboards visualizing climate change & global indices using Vega-Lite.',
           imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/Qiyuan2004',
+          link: 'https://docs.google.com/document/d/1P_CN9CaSf1Ms07HoGLteejKz-v8_wk27EoVuM40dVJA/edit?tab=t.0#heading=h.1znbzgxl7p67',
         },
       ],
     },
