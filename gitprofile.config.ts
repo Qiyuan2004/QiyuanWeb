@@ -1,106 +1,22 @@
-// gitprofile.config.ts
-
 const CONFIG = {
-  github: {
-    username: 'Qiyuan2004', // 你的 GitHub 用户名
-  },
-
-  // 仓库路径（如果仓库名是 QiyuanWeb）
+  github: { username: 'Qiyuan2004' },
   base: '/QiyuanWeb/',
-
-  projects: {
-    github: {
-      display: true,
-      header: 'GitHub Projects',
-      mode: 'automatic',
-      automatic: {
-        sortBy: 'stars',
-        limit: 6,
-        exclude: { forks: true, projects: [] },
-      },
-      manual: { projects: [] },
-    },
-    external: {
-      header: 'Featured Projects',
-      projects: [
-        {
-          title: 'Jet Tagging with Transformers',
-          description:
-            'Transformer-based deep learning model classifying LHC jets into 5 categories with 77.1% accuracy.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/Qiyuan2004/jet-tagging',
-        },
-        {
-          title: 'MOOC Completion Predictor',
-          description:
-            'Predicting MOOC course completion with decision tree ensembles, achieving 95.3% accuracy.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/Qiyuan2004',
-        },
-        {
-          title: 'Interactive Data Visualization',
-          description:
-            'Dashboards visualizing climate change & global indices using Vega-Lite.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://github.com/Qiyuan2004',
-        },
-      ],
-    },
-  },
-
   seo: {
     title: 'Portfolio of Qiyuan Qiu',
     description:
       'ACMS student at UW, focusing on Machine Learning, Data Analysis, and Algorithms.',
-    imageURL: '/avatar.jpg', // 本地头像作为 SEO 分享图
+    imageURL: '/avatar.jpg', // 本地头像
   },
-
   social: {
     linkedin: 'qiyuan-qiu-10a747304',
     github: 'Qiyuan2004',
     website: 'https://qiyuan2004.github.io/QiyuanWeb/',
     email: 'qq22@uw.edu',
-    x: '',
-    mastodon: '',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '',
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: '',
-    dev: '',
-    stackoverflow: '',
-    discord: '',
-    telegram: '',
-    phone: '',
   },
-
-  // 简历下载
-  resume: {
-    fileUrl: '/resume.pdf',
-  },
-
+  resume: { fileUrl: '/resume.pdf' },
   skills: [
-    'Python',
-    'OCaml',
-    'C/C++',
-    'Java',
-    'SQL',
-    'HTML/CSS',
-    'LaTeX',
-    'PyTorch',
-    'NumPy',
-    'Pandas',
-    'Matplotlib',
+    'Python','OCaml','C/C++','Java','SQL','HTML/CSS','LaTeX','PyTorch','NumPy','Pandas','Matplotlib',
   ],
-
   experiences: [
     {
       company: 'China Mobile',
@@ -117,9 +33,6 @@ const CONFIG = {
       companyLink: 'https://www.massmutual.com/',
     },
   ],
-
-  certifications: [],
-
   educations: [
     {
       institution: 'University of Washington',
@@ -130,35 +43,51 @@ const CONFIG = {
       institutionLink: 'https://www.uw.edu',
     },
   ],
-
-  publications: [],
-
+  projects: {
+    github: {
+      display: true,
+      header: 'GitHub Projects',
+      mode: 'automatic',
+      automatic: { sortBy: 'stars', limit: 6, exclude: { forks: true, projects: [] } },
+    },
+    external: {
+      header: 'Featured Projects',
+      projects: [
+        {
+          title: 'Jet Tagging with Transformers',
+          description: 'Transformer-based deep learning model classifying LHC jets into 5 categories with 77.1% accuracy.',
+          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/Qiyuan2004/jet-tagging',
+        },
+        {
+          title: 'MOOC Completion Predictor',
+          description: 'Predicting MOOC course completion with decision tree ensembles, achieving 95.3% accuracy.',
+          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/Qiyuan2004',
+        },
+        {
+          title: 'Interactive Data Visualization',
+          description: 'Dashboards visualizing climate change & global indices using Vega-Lite.',
+          imageUrl: 'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/Qiyuan2004',
+        },
+      ],
+    },
+  },
   blog: { source: '', username: '', limit: 0 },
-
   googleAnalytics: { id: '' },
   hotjar: { id: '', snippetVersion: 6 },
-
   themeConfig: {
     defaultTheme: 'nord',
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-
-    themes: [
-      'light', 'dark', 'cupcake', 'bumblebee', 'emerald', 'corporate', 'synthwave',
-      'retro', 'cyberpunk', 'valentine', 'halloween', 'garden', 'forest', 'aqua',
-      'lofi', 'pastel', 'fantasy', 'wireframe', 'black', 'luxury', 'dracula', 'cmyk',
-      'autumn', 'business', 'acid', 'lemonade', 'night', 'coffee', 'winter', 'dim',
-      'nord', 'sunset', 'caramellatte', 'abyss', 'silk', 'procyon',
-    ],
+    themes: ['light','dark','cupcake','bumblebee','emerald','corporate','synthwave','retro',
+             'cyberpunk','valentine','halloween','garden','forest','aqua','lofi','pastel',
+             'fantasy','wireframe','black','luxury','dracula','cmyk','autumn','business',
+             'acid','lemonade','night','coffee','winter','dim','nord','sunset','procyon'],
   },
-
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
+  footer: `Made with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> and ❤️`,
   enablePWA: true,
 };
 
