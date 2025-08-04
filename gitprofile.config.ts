@@ -1,15 +1,17 @@
 const CONFIG = {
-  github: { username: 'Qiyuan2004' },
+  github: { 
+    username: 'Qiyuan2004',
+    avatarUrl: '/avatar.jpg', // 明确使用public中的头像
+  },
   base: '/QiyuanWeb/',
   seo: {
     title: 'Portfolio of Qiyuan Qiu',
     description:
       'ACMS student at UW, focusing on Machine Learning, Data Analysis, and Algorithms.',
-    imageURL: '/avatar.jpg', // 本地头像
+    imageURL: '/avatar.jpg',
   },
   social: {
     linkedin: 'qiyuan-qiu-10a747304',
-    github: 'Qiyuan2004',
     website: 'https://qiyuan2004.github.io/QiyuanWeb/',
     email: 'qq22@uw.edu',
   },
@@ -40,7 +42,8 @@ const CONFIG = {
         'B.S. in Applied and Computational Mathematical Sciences (Discrete Math & Algorithms)',
       from: '2022',
       to: '2026 (Expected)',
-      institutionLink: 'https://www.uw.edu',
+      // 暂时去除 institutionLink，除非确定源码支持
+      // institutionLink: 'https://www.uw.edu',
     },
   ],
   projects: {
@@ -48,7 +51,11 @@ const CONFIG = {
       display: true,
       header: 'GitHub Projects',
       mode: 'automatic',
-      automatic: { sortBy: 'stars', limit: 6, exclude: { forks: true, projects: [] } },
+      automatic: { 
+        sortBy: 'stars', 
+        limit: 6, 
+        exclude: { forks: true, projects: [] } 
+      },
     },
     external: {
       header: 'Featured Projects',
